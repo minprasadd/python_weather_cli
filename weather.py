@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 CLI Weather App using Open-Meteo (100% free, no API key needed!)
 Usage: python weather.py <city name>
@@ -13,8 +12,6 @@ from datetime import datetime
 GEO_URL     = "https://geocoding-api.open-meteo.com/v1/search"
 WEATHER_URL = "https://api.open-meteo.com/v1/forecast"
 
-
-# ── Weather code descriptions ─────────────────────────────────────────────────
 
 WEATHER_CODES = {
     0:  ("Clear Sky",           "☀️"),
@@ -39,8 +36,6 @@ WEATHER_CODES = {
     99: ("Thunderstorm + Hail", "⛈️"),
 }
 
-
-# ── Helpers ───────────────────────────────────────────────────────────────────
 
 def get_coordinates(city):
     """Step 1: Convert city name → latitude & longitude."""
